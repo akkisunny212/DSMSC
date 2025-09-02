@@ -1,0 +1,27 @@
+.footer {
+  background: #7C6A4A;
+  color: #F5F3EE;
+  padding: 1rem 0;
+  text-align: center;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 1rem;
+  border-top: 2px solid #A89F91;
+}
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  align-items: center;
+}
+.footer-company {
+  font-weight: 700;
+}
+.footer-location {
+  font-weight: 400;
+}
+@media (max-width: 600px) {
+  .footer {
+    font-size: 0.9rem;
+    padding: 0.7rem 0;
+  }
+}

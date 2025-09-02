@@ -1,0 +1,117 @@
+
+:root {
+  --color-primary: #7C6A4A;
+  --color-secondary: #A89F91;
+  --color-accent: #D9B382;
+  --color-background: #F5F3EE;
+  --color-text: #2E2B26;
+  font-family: Oswald, Roboto, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light;
+  color: var(--color-text);
+  background-color: var(--color-background);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 700;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--color-accent);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--color-background);
+  color: var(--color-text);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Oswald, Arial, sans-serif;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+h1 {
+  font-size: 2.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid var(--color-secondary);
+  background: var(--color-primary);
+  color: var(--color-background);
+  font-family: Oswald, Arial, sans-serif;
+  font-weight: 700;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+button:hover {
+  background: var(--color-accent);
+  color: var(--color-text);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto var(--color-accent);
+}
+
+.main-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+  background: var(--color-background);
+  color: var(--color-text);
+}
+
+.hero {
+  background: var(--color-secondary);
+  padding: 2rem 1rem;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(44, 38, 26, 0.08);
+}
+
+.quick-links {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.quick-link {
+  background: var(--color-primary);
+  color: var(--color-background);
+  padding: 0.7em 1.2em;
+  border-radius: 6px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.quick-link:hover {
+  background: var(--color-accent);
+  color: var(--color-text);
+}
+
+@media (max-width: 600px) {
+  .main-content {
+    padding: 0.5rem;
+  }
+  .hero {
+    padding: 1rem 0.5rem;
+  }
+  .quick-links {
+    gap: 0.7rem;
+    flex-direction: column;
+    align-items: center;
+  }
+}

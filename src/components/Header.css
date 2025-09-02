@@ -1,0 +1,54 @@
+.header {
+  background: #F5F3EE;
+  border-bottom: 2px solid #A89F91;
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.company-name {
+  font-family: Oswald, Arial, sans-serif;
+  font-weight: 700;
+  color: #7C6A4A;
+  margin: 0;
+  font-size: 1.5rem;
+}
+.tagline {
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 400;
+  color: #2E2B26;
+  font-size: 1rem;
+}
+.nav {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-link {
+  font-family: Oswald, Arial, sans-serif;
+  color: #7C6A4A;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+.nav-link:hover {
+  color: #D9B382;
+}
+@media (max-width: 600px) {
+  .header {
+    padding: 0.5rem;
+  }
+  .company-name {
+    font-size: 1.1rem;
+  }
+  .nav {
+    gap: 0.7rem;
+    flex-wrap: wrap;
+  }
+}
